@@ -14,7 +14,7 @@ class Tester
     virtual ~Tester() {}
 
   protected:
-    virtual ResultType runAlgorithm(const InputType& inputData) = 0;
+    virtual InputType runAlgorithm(const InputType& inputData) = 0;
     virtual InputType readSingleInput(std::istream& inputStream) = 0;
 
   private:
