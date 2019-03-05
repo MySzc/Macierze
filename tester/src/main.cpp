@@ -11,11 +11,6 @@ class SumTester : public Tester<int, std::vector<int>>
     std::vector<int> readSingleInput(std::istream& inputStream) override;
 };
 
-/*
-struct Matrix : public std::vector<int>
-{};
-*/
-
 
 // override of the ostream << operator
 std::ostream& operator<<(std::ostream& output, std::vector<int> finalSum)
@@ -52,6 +47,9 @@ std::vector<int> SumTester::readSingleInput(std::istream& inputStream)
     inputStream >> m;
 
     std::vector<int> result;
+
+    result.push_back(n);
+    result.push_back(m);
 
     for(auto i = 0; i < 2*n*m; i++)
     {
